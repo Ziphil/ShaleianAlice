@@ -3,10 +3,14 @@
 
 div.slide {
   @include slide;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   div.header {
     width: 100%;
-    height: 0.8rem;
+    height: 7vh;
     top: 0rem;
     left: 0rem;
     background-color: hsl(205, 100%, 60%);
@@ -16,7 +20,7 @@ div.slide {
 
   div.footer {
     width: 100%;
-    height: 0.8rem;
+    height: 7vh;
     bottom: 0rem;
     left: 0rem;
     background-color: hsl(35, 100%, 60%);
@@ -24,10 +28,31 @@ div.slide {
     z-index: 0;
   }
 
+  div.logo {
+    margin: 0rem 2.5rem 0rem 3rem;
+  }
+
+  div.logo img {
+    height: 8rem;
+  }
+
+  div.content {
+    margin: 0rem 3rem 0rem 0rem;
+  }
+
 }
 
 
 div.slide div.content {
   @include slide-content;
+
+  div.text {
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  div.text.sh:nth-child(1) span.sans {
+    font-family: "Vekos" !important;
+  }
 
 }
