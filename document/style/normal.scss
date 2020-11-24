@@ -8,24 +8,45 @@ div.slide {
   justify-content: center;
   align-items: center;
 
+  $header-height: 7vh;
+  $header-background-color: hsl(205, 100%, 60%);
+  $footer-background-color: hsl(35, 100%, 60%);
+  $number-intrusion: 50%;
+
   div.header {
     width: 100%;
-    height: 7vh;
+    height: $header-height;
     top: 0rem;
     left: 0rem;
-    background-color: hsl(205, 100%, 60%);
+    background-color: $header-background-color;
     position: absolute;
     z-index: 0;
   }
 
   div.footer {
     width: 100%;
-    height: 7vh;
+    height: $header-height;
     bottom: 0rem;
     left: 0rem;
-    background-color: hsl(35, 100%, 60%);
+    background-color: $footer-background-color;
     position: absolute;
     z-index: 0;
+  }
+
+  div.number {
+    top: calc(#{$header-height} - #{1em * ($number-intrusion / 100%)});
+    left: 0.8rem;
+    font-family: $special-font-family;
+    font-size: 250%;
+    font-weight: bold;
+    font-stretch: condensed;
+    letter-spacing: -0.05em;
+    background: linear-gradient(to bottom, white $number-intrusion, $header-background-color $number-intrusion);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    z-index: 1;
   }
 
   div.logo {
