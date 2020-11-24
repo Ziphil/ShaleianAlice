@@ -8,7 +8,11 @@ converter.add(["slide"], ["root"]) do |element, _, number|
     slide_number = variables[:slide_count].to_s.to_i
     this << Tag.build("div", "slide") do |this|
       this << Tag.new("div", "header")
-      this << Tag.new("div", "footer")
+      this << Tag.build("div", "footer") do |this|
+        this << Tag.build("div", "source") do |this|
+          this << "Alice's Adventures in Wonderland"
+        end
+      end
       this << Tag.build("div", "number") do |this|
         this << slide_number.to_s
       end

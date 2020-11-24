@@ -28,9 +28,19 @@ div.slide {
     height: $header-height;
     bottom: 0rem;
     left: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     background-color: $footer-background-color;
     position: absolute;
     z-index: 0;
+  }
+
+  div.footer div.source {
+    margin: 0rem 1rem 0rem 0rem;
+    font-size: 50%;
+    color: white;
+    text-align: right;
   }
 
   div.number {
