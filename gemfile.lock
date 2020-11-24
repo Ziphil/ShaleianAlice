@@ -9,8 +9,8 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-    zenml (1.5.0)
-    zenml-slide (1.0.1)
+    zenml (1.6.1)
+    zenml-slide (1.0.2)
       sassc
       selenium-webdriver
 
