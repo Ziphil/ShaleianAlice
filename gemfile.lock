@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    childprocess (3.0.0)
+    ffi (1.13.1-x64-mingw32)
+    rubyzip (2.3.0)
+    sassc (2.4.0-x64-mingw32)
+      ffi (~> 1.9)
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
+    zenml (1.5.0)
+    zenml-slide (1.0.1)
+      sassc
+      selenium-webdriver
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  bundler
+  zenml
+  zenml-slide
+
+BUNDLED WITH
+   2.1.4
