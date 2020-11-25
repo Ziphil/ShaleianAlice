@@ -33,10 +33,12 @@ converter.add(["sh", "en"], ["slide"]) do |element, _, count|
   this = ""
   duplication = (element.name == "sh") ? 2 : 1
   duplication.times do
-    this << Tag.build("div", "text") do |this|
+    this << Tag.build("div", "text-wrapper") do |this|
       this.set_range(element, count)
       this["class"] << " " + element.name
-      this << apply(element, "slide", count)
+      this << Tag.build("div", "text") do |this|
+        this << apply(element, "slide", count)
+      end
     end
   end
   next this
