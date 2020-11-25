@@ -15,4 +15,5 @@ $stdout.sync = true
 
 
 whole_converter = Slide::WholeSlideConverter.new(ARGV)
+whole_converter.title = "Alice's Adventures in Wonderland"
 whole_converter.execute
