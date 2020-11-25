@@ -5,7 +5,7 @@ converter.add(["slide"], ["root"]) do |element, _, number|
   this = ""
   Tag.repeat(element) do |count|
     variables[:slide_count] = variables[:slide_count].to_i + 1
-    slide_number = variables[:slide_count].to_s.to_i
+    slide_number = variables[:slide_count].to_i - 1
     this << Tag.build("div", "slide") do |this|
       this << Tag.new("div", "header")
       this << Tag.build("div", "footer") do |this|

@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+
+div.title-slide {
+  @include slide;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  div.logo {
+    margin: 0rem 2.5rem 0rem 3rem;
+  }
+
+  div.logo img {
+    height: 8rem;
+  }
+
+}
+
+
+div.title-slide div.content {
+  @include slide-content;
+  padding: 0vh;
+  font-family: $special-font-family;
+  font-weight: bold;
+  font-stretch: condensed;
+  color: white;
+  letter-spacing: 0.1em;
+  text-align: center;
+  justify-content: center;
+
+  $title-background-color: hsl(205, 100%, 60%);
+  $subtitle-background-color: hsl(35, 100%, 60%);
+
+  div.title {
+    padding: 0.5rem 0rem;
+    font-size: 220%;
+    background-color: $title-background-color;
+    border-bottom: 0.2rem white solid;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  div.subtitle {
+    padding: 0.5rem 0rem;
+    font-size: 160%;
+    background-color: $subtitle-background-color;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+}

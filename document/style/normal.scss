@@ -77,7 +77,6 @@ div.slide {
 
 div.slide div.content {
   @include slide-content;
-  flex-grow: 1;
 
   $text-border-color: hsl(0, 0%, 70%);
   $text-boder-width: 0.05em;

@@ -38,6 +38,7 @@ $background-colors: (
 @mixin slide-content {
   height: 100%;
   padding: 12vh 0vh;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: stretch;
@@ -47,6 +48,7 @@ $background-colors: (
 
 
 @import "normal.scss";
+@import "title.scss";
 
 
 html {

@@ -1,7 +1,9 @@
-\zml?|version="1.0"|>
-\xml?|version="1.0",encoding="UTF-8"|>
+\zml?|version="1.1"|;
+\xml?|version="1.0",encoding="UTF-8"|;
 
 \root<
+
+  \title-slide;
 
   \slide<
     \sh<{e ʻalis, pôzac ovel ebam zi'n déqat a's ca zehrisis vo fîc ica hinof, lo kavat a's e dat dozat lesas e a's.}>
