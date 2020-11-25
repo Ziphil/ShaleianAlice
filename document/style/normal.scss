@@ -45,7 +45,8 @@ div.slide {
 
   div.number {
     top: calc(#{$header-height} - #{1em * ($number-intrusion / 100%)});
-    left: 0.8rem;
+    left: 0rem;
+    padding: 0rem 1rem;
     font-family: $special-font-family;
     font-size: 250%;
     font-weight: bold;
@@ -76,6 +77,7 @@ div.slide {
 
 div.slide div.content {
   @include slide-content;
+  flex-grow: 1;
 
   $text-border-color: hsl(0, 0%, 70%);
   $text-boder-width: 0.05em;
